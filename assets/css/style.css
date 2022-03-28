@@ -371,6 +371,7 @@ html {
 
 }
 
+
 #modal {
     position: fixed;
     top: 0;
@@ -419,6 +420,7 @@ html {
     justify-content: center;
     font-size: 30px;
     color: #fff;
+    letter-spacing: 4px;
 }
 
 .modal-heading-icon {
