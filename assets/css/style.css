@@ -1,7 +1,11 @@
+/* PC: >= 1024px
+Tablet: >= 740px & < 1024px
+Mobile: <740px */
+
 /* Common */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -63,6 +67,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn {
     color: #fff;
     background-color: #000;
@@ -100,7 +108,6 @@ html {
 }
 
 #nav li {
-    padding: 0 24px;
     display: inline-block;
     position: relative;
 }
@@ -108,6 +115,8 @@ html {
 #nav > li > a {
     color: #fff;
     text-transform: uppercase;
+    display: block;
+    padding: 0 24px;
 }
 
 #nav li a {
@@ -157,9 +166,17 @@ html {
     background-color: #ccc;
 }
 
-#header .search-btn {
+#header .search-btn,
+#header .mobile-menu-btn {
     padding: 0px 20px;
     float: right;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .search-btn:hover {
@@ -167,7 +184,13 @@ html {
     background-color: #f44336;
 }
 
-#header .search-icon {
+#header .mobile-menu-btn:hover {
+    cursor: pointer;
+    background-color: #757575;
+}
+
+#header .search-icon,
+#header .mobile-menu-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46.5px;
@@ -177,7 +200,8 @@ html {
     position: relative;
     margin-top: 46.5px;
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
+    z-index: -5;
 }
 
 #slider .text-content {
@@ -204,9 +228,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -232,7 +259,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -282,7 +309,7 @@ html {
 }
 
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -326,6 +353,18 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #101aef;
+    opacity: 1;
 }
 
 .contact-form {
@@ -390,7 +429,7 @@ html {
 .model-container {
     background-color: #fff;
     width: 900px;
-    max-width: calc(100% - 256px);
+    max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
