@@ -79,6 +79,8 @@ html {
     margin-top: 15px;
     display: inline-block;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -201,9 +203,6 @@ html {
     margin-top: 46.5px;
     padding-top: 50%;
     background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
-<<<<<<< HEA
-=======
->>>>>>> 080d2643ff20ef1423d04898624836560078e0b9
 }
 
 #slider .text-content {
