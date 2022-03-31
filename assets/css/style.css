@@ -201,7 +201,9 @@ html {
     margin-top: 46.5px;
     padding-top: 50%;
     background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
-    z-index: -5;
+<<<<<<< HEA
+=======
+>>>>>>> 080d2643ff20ef1423d04898624836560078e0b9
 }
 
 #slider .text-content {
@@ -410,6 +412,7 @@ html {
 
 }
 
+
 #modal {
     position: fixed;
     top: 0;
@@ -458,6 +461,7 @@ html {
     justify-content: center;
     font-size: 30px;
     color: #fff;
+    letter-spacing: 4px;
 }
 
 .modal-heading-icon {
