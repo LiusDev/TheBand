@@ -1,2 +1,2 @@
 # TheBand
-Website: https://liusdev.github.io/TheBand/
+Website: https://quydxtheband.netlify.app/
